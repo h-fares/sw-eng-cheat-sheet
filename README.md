@@ -25,3 +25,4 @@ The problem herre could be the high number of requests from the server to DB to 
 
 ![stateless app](https://i.imgur.com/r4Lih4H.png "stateless app")
 
+```based on Hussein Nasser's video``` [Stateful vs Stateless Applications (Explained by Example)](https://www.youtube.com/watch?v=nFPzI_Qg3FU)
