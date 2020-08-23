@@ -46,13 +46,17 @@ While functional requirements define what the system does or must not do, non-fu
 #### Functional Requirements Example:
 
 Authentication of a user when he/she tries to log into the system.
+
 System shutdown in the case of a cyber attack.
+
 Verification email is sent to user whenever he/she registers for the first time on some software system.
 
 #### Non-functional Requirements Example:
 
 Emails should be sent with a latency of no greater than 12 hours.
+
 Each request should be processed within 10 seconds.
+
 The site should load in 3 seconds when the number of simultaneous users are > 10000
 
 *** 
