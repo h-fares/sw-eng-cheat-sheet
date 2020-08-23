@@ -1,5 +1,61 @@
 # Software Engineering cheat sheet
+## The requirements in software engineering
+### Functional requirements
+Functional requirements define the basic system behaviour, they are ***what*** the system does or must not do, and can be thought of in terms of how the system responds to inputs.
 
+Functional requirements are features that allow the system to function as it was intended. Put another way, if the functional requirements are not met, the system will not work. Functional requirements are product features and focus on user requirements.
+
+#### Some of the functional requirements: 
+* Business Rules.
+* Transaction corrections, adjustments and cancellations.
+* Administrative functions
+* Authentication
+* Authorization levels
+* Audit Tracking
+* External Interfaces
+* Certification Requirements
+* Reporting Requirements
+* Historical Data
+* Legal or Regulatory Requirements
+
+
+### Non functional requirements
+While functional requirements define what the system does or must not do, non-functional requirements specify how the system should do it. Non-functional requirements do not affect the basic functionality of the system (hence the name, non-functional requirements). Even if the non-functional requirements are not met, the system will still perform its basic purpose.
+#### Some of the non functional requirements
+* Performance – for example Response Time, Throughput, Utilization, Static Volumetric
+* Scalability
+* Capacity
+* Availability
+* Reliability
+* Recoverability
+* Maintainability
+* Serviceability
+* Security
+* Regulatory
+* Manageability
+* Environmental
+* Data Integrity
+* Usability
+* Interoperability
+
+### Difference between functional and non-functional requirements
+![difference](https://i.imgur.com/uzUqsX8.png "difference")
+
+### Examples of functional and non-functional requirements
+
+#### Functional Requirements Example:
+
+Authentication of a user when he/she tries to log into the system.
+System shutdown in the case of a cyber attack.
+Verification email is sent to user whenever he/she registers for the first time on some software system.
+
+#### Non-functional Requirements Example:
+
+Emails should be sent with a latency of no greater than 12 hours.
+Each request should be processed within 10 seconds.
+The site should load in 3 seconds when the number of simultaneous users are > 10000
+
+*** 
 
 ## Stateful vs Stateless Applications
 ### Stateful application:
