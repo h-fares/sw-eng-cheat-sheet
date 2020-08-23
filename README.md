@@ -60,7 +60,18 @@ Each request should be processed within 10 seconds.
 The site should load in 3 seconds when the number of simultaneous users are > 10000
 
 *** 
+## User cases and User case diagramm
+### User case diagramm
+The user case diagramm is a high level methode to describe an idea of a System in a simple way that can be understood from all users.
 
+The User case diagramm contains: 
+* System: could be Wep application, software component or Business process.
+* Actor: could be any user that has access to this system like admin, user, another system, organisation or an external device.
+* User case: is a description of a function that will be done from an actor (e.g. actor make login to the system, login will be an user case)
+* Relationship: is a way to descripe how all actors and user case connect with each other.
+
+
+*** 
 ## Stateful vs Stateless Applications
 ### Stateful application:
 a statefull application is an application that use a defined state to make its job. Lets imagen that we have a Server1 has two services Login and viewProfile.
