@@ -69,6 +69,16 @@ The User case diagramm contains:
 * Actor: could be any user that has access to this system like admin, user, another system, organisation or an external device.
 * User case: is a description of a function that will be done from an actor (e.g. actor make login to the system, login will be an user case)
 * Relationship: is a way to descripe how all actors and user case connect with each other.
+  * Type of the relationships:
+    * Association: is a base relationship between two sides.
+    * Include: an Included use case (B) is inside a base use case (A). (B) has to be done that let (A) to be done. to connect between (A) (B) we drow (A)---->(B)
+    * Extend: has a base use case (A) and extend use case (E), when (A) is executed, (E) will sometimes be executed. (E) will only be executed in certain conditions. (A)<----(E)
+    ![different between Include and Extend](https://i.imgur.com/QmaWEmF.png)
+    * Generalization .
+
+Example for a Banking App Usecase diagramm ```based on``` [UML Use Case Diagram Tutorial](https://www.youtube.com/watch?v=zid-MVo7M-E)
+
+![img](https://i.imgur.com/78KLF9P.png)
 
 ### User Story
 The user story describes pieces of functionality from a user’s point of view, expressed in a solid, compact way. They reflect what a particular class of user needs and the value to be gained.
