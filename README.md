@@ -70,6 +70,20 @@ The User case diagramm contains:
 * User case: is a description of a function that will be done from an actor (e.g. actor make login to the system, login will be an user case)
 * Relationship: is a way to descripe how all actors and user case connect with each other.
 
+### User Story
+The user story describes pieces of functionality from a user’s point of view, expressed in a solid, compact way. They reflect what a particular class of user needs and the value to be gained.
+
+User stories provide an excellent way to define your product with clarity. A set of well-defined, prioritized user stories can help you articulate the functionality of your product using ‘plain English’ — with no technicalities and implementation details.
+The ‘user story’ approach empowers meaningful product discussions, both within the product development team and with external stakeholders.
+
+#### How to write a good user story?
+There are several variations to write a good user story, including:
+
+``` “As a <role or persona>, I can <goal/need> so that <why>” ``` 
+
+Or
+
+```“As a <particular class of user>, I want to <be able to perform/do something> so that <I get some form of value or benefit>”```
 
 *** 
 ## Stateful vs Stateless Applications
