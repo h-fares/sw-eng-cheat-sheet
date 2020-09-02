@@ -96,6 +96,23 @@ Or
 ```“As a <particular class of user>, I want to <be able to perform/do something> so that <I get some form of value or benefit>”```
 
 *** 
+## Entity Relationship diagram (ERD)
+An Entity Relationship diagram is a way to descripe the relationship between all elements, tables and components in the Database. An ERD consists of many Entities, every entity reference a table on our Database. The entity has all atributes and keys in the original Database table.
+
+we connect our entities with relations. There is a many types of relations to create ERD, we will talk about relationship types in UML.
+### Relations types in UML
+* one to one (1:1): Entity_A has just one element from Entity_B and Entity_B has just one element from Entity_A
+* one to N (1:N): Entity_A has more than one element from Entity_B and Entity_B has just one element from Entity_A 
+* N to M (N:M): Entity_A has more than one element from Entity_B and Entity_B has more than one element from Entity_A
+#### Notation for relationship
+* Assoziation: is the normal relationship between entities (Entity_A and Entity_B use each other): the relation between a doctor and patient is Assoziation.
+* Assoziation classes: is a relationship between three entities, the middle entity connect the other two entities and does not exist without the other two. e.g. a company need an employ and an employ is a person with more attributes.A company has more than one employ and the employ works for one company, an employ is one person but the person could be an employ in more than on company. That is an Assoziation classes.
+* Generalization: a Entity_B and Entity_C inherit some attributes from Entity_A.
+* Aggrigation: is a relationship between two entities one is strong(parent) and onther is weak(child) with the ability to delete the parent without effect on the child. Car(parent) and Engine(child): if we delete the Car the relationship will be also deleted but the engine still exist and meaningfull.
+* Composition: is a relationship between two entities one is strong(parent) and onther is weak(child) with the no ability to delete the parent without effect on the child. That mean ifwe delete the parent the child will be meaningless and automatily deleted. Person(parent) and Hand(Child): if we delete the Person the relationship will be also deleted and the Hand will be also meaningless (Hand does not exist without person) so the Hand will be also deleted.
+
+
+***
 ## Stateful vs Stateless Applications
 ### Stateful application:
 a statefull application is an application that use a defined state to make its job. Lets imagen that we have a Server1 has two services Login and viewProfile.
