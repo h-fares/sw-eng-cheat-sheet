@@ -94,7 +94,77 @@ There are several variations to write a good user story, including:
 Or
 
 ```“As a <particular class of user>, I want to <be able to perform/do something> so that <I get some form of value or benefit>”```
+***
+### Relational Databases
+Relational Databases are defined by relationships in the data (primary and foreign keys). Data is contained in tables that looks much like an Excel speardsheet.
+#### Table
+A table is a collection of related data held in a table format within a database. It consists of columns and rows.
 
+#### Primary key
+A primary is a single column value used to identify a database record uniquely.
+
+It has following attributes
+
+* A primary key cannot be NULL
+* A primary key value must be unique
+* The primary key values should rarely be changed
+* The primary key must be given a value when a new record is inserted.
+
+#### Foreign key
+Foreign Key references the primary key of another Table! It helps connect your Tables
+
+* A foreign key can have a different name from its primary key
+* It ensures rows in one table have corresponding rows in another
+* Unlike the Primary key, they do not have to be unique. Most often they aren't
+* Foreign keys can be null even though primary keys can not 
+
+### Database Normalization
+NORMALIZATION is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalization in SQL is to eliminate redundant (repetitive) data and ensure data is stored logically.
+
+#### 1NF (First Normal Form) Rules
+* Each table cell should contain a single value.
+* Each record needs to be unique.
+* The primery key will be used. 
+
+e.g.
+
+![](https://www.guru99.com/images/1NF.png)
+
+[https://www.guru99.com/images/1NF.png]
+
+
+#### 2NF (Second Normal Form) Rules
+* Rule 1- Be in 1NF
+* Rule 2- Single Column Primary Key
+* another table will be linked with the main table 
+
+![](https://www.guru99.com/images/Table2.png)
+
+[https://www.guru99.com/images/Table2.png]
+
+![](https://www.guru99.com/images/Table1.png)
+
+[https://www.guru99.com/images/Table1.png]
+
+As we see the first table has an primery key (membership_id) and with this key the second table will be link. the membership_id in the second table called foreign key.
+
+
+#### 3NF (Third Normal Form) Rules
+
+* Rule 1- Be in 2NF
+* Rule 2- Has no transitive functional dependencies
+
+![](https://www.guru99.com/images/2NFTable1.png)
+
+[https://www.guru99.com/images/2NFTable1.png]
+
+![](https://www.guru99.com/images/2NFTable2.png)
+
+[https://www.guru99.com/images/2NFTable2.png]
+
+![](https://www.guru99.com/images/2NFTable3.png)
+
+[https://www.guru99.com/images/2NFTable3.png]
 *** 
 ## Entity Relationship diagram (ERD)
 An Entity Relationship diagram is a way to descripe the relationship between all elements, tables and components in the Database. An ERD consists of many Entities, every entity reference a table on our Database. The entity has all atributes and keys in the original Database table.
