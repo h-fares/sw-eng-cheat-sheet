@@ -178,8 +178,44 @@ we connect our entities with relations. There is a many types of relations to cr
 * Assoziation: is the normal relationship between entities (Entity_A and Entity_B use each other): the relation between a doctor and patient is Assoziation.
 * Assoziation classes: is a relationship between three entities, the middle entity connect the other two entities and does not exist without the other two. e.g. a company need an employ and an employ is a person with more attributes.A company has more than one employ and the employ works for one company, an employ is one person but the person could be an employ in more than on company. That is an Assoziation classes.
 * Generalization: a Entity_B and Entity_C inherit some attributes from Entity_A.
-* Aggrigation: is a relationship between two entities one is strong(parent) and onther is weak(child) with the ability to delete the parent without effect on the child. Car(parent) and Engine(child): if we delete the Car the relationship will be also deleted but the engine still exist and meaningfull.
-* Composition: is a relationship between two entities one is strong(parent) and onther is weak(child) with the no ability to delete the parent without effect on the child. That mean ifwe delete the parent the child will be meaningless and automatily deleted. Person(parent) and Hand(Child): if we delete the Person the relationship will be also deleted and the Hand will be also meaningless (Hand does not exist without person) so the Hand will be also deleted.
+* Aggrigation: is a relationship between two entities one is parent and onther is child with the ability to delete the parent without effect on the child. Car(parent) and Engine(child): if we delete the Car the relationship will be also deleted but the engine still exist and meaningfull.
+* Composition: is a relationship between two entities one is parent and onther is child with no ability to delete the parent without effect on the child. That mean if we delete the parent the child will be meaningless and automatily deleted. Person(parent) and Hand(Child): if we delete the Person the relationship will be also deleted and the Hand will be also meaningless (Hand does not exist without person) so the Hand will be also deleted.
+
+***
+
+## UML Class Diagram
+The class diagram is the main building block of object-oriented modeling. It is used for general conceptual modeling of the structure of the application, and for detailed modeling translating the models into programming code. Class diagrams can also be used for data modeling.[1] The classes in a class diagram represent both the main elements, interactions in the application, and the classes to be programmed.
+
+In the diagram, classes are represented with boxes that contain three compartments:
+* The top compartment contains the name of the class. It is printed in bold and centered, and the first letter is capitalized.
+* The middle compartment contains the attributes of the class. They are left-aligned and the first letter is lowercase.
+* The bottom compartment contains the operations the class can execute. They are also left-aligned and the first letter is lowercase.
+
+The attributes and operations have to be written in a certain wa:
+* Attributes: <visibility> <NameOfAttibute>: <DataType>
+* Operations: <visibility> <NameOfOperation>()
+ 
+The visibility before the name of attribute/operation is:
+* - is to tell us that the attribute/operation is private
+* + is to tell us that the attribute/operation is public
+* # is to tell us that the attribute/operation is protected
+* ~ is to tell us that the attribute/operation is pakage
+
+### Relations in Class Diagram
+#### Inheritance
+![](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Inheritance-Relationship.jpeg)
+refers to a type of relationship wherein one associated class is a child of another by virtue of assuming the same functionalities of the parent class. In other words, the child class is a specific type of the parent class. To show inheritance in a UML diagram, a solid line from the child class to the parent class is drawn using an unfilled arrowhead. The parent class in now a abstruct class and the name of this class will be in *italics*.
+
+#### Association
+![](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Association-Relationship.jpeg)
+is a broad term that encompasses just about any logical connection or relationship between classes
+#### Aggregation
+![](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Aggregation-Relationship.png)
+Aggregation is a relation between to classes parent and child, if we delete the parent the child still exist.
+
+#### Composition
+![](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Composition-Relationship-UML.png)
+Composition is a relation between to classes parent and child, if we delete the parent the child will not be exist.
 
 
 ***
