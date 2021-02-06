@@ -60,15 +60,15 @@ Each request should be processed within 10 seconds.
 The site should load in 3 seconds when the number of simultaneous users are > 10000
 
 *** 
-## User cases and User case diagramm
+## Use cases and Use case diagramm
 ### User case diagramm
-The user case diagramm is a high level methode to describe an idea of a System in a simple way that can be understood from all users.
+The use case diagramm is a high level methode to describe an idea of a System in a simple way that can be understood from all users.
 
-The User case diagramm contains: 
+The Use case diagramm contains: 
 * System: could be Wep application, software component or Business process.
 * Actor: could be any user that has access to this system like admin, user, another system, organisation or an external device.
-* User case: is a description of a function that will be done from an actor (e.g. actor make login to the system, login will be an user case)
-* Relationship: is a way to descripe how all actors and user case connect with each other.
+* Use case: is a description of a function that will be done from an actor (e.g. actor make login to the system, login will be an use case)
+* Relationship: is a way to descripe how all actors and use case connect with each other.
   * Type of the relationships:
     * Association: is a base relationship between two sides.
     * Include: an Included use case (B) is inside a base use case (A). (B) has to be done that let (A) to be done. to connect between (A) (B) we drow (A)---->(B)
@@ -76,7 +76,7 @@ The User case diagramm contains:
     ![different between Include and Extend](https://i.imgur.com/QmaWEmF.png)
     * Generalization .
 
-Example for a Banking App Usecase diagramm ```based on``` [UML Use Case Diagram Tutorial](https://www.youtube.com/watch?v=zid-MVo7M-E)
+Example for a Banking App Use case diagramm ```based on``` [UML Use Case Diagram Tutorial](https://www.youtube.com/watch?v=zid-MVo7M-E)
 
 ![img](https://i.imgur.com/78KLF9P.png)
 
