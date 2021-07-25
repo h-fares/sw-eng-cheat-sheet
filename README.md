@@ -61,7 +61,7 @@ The site should load in 3 seconds when the number of simultaneous users are > 10
 
 *** 
 ## Use cases and Use case diagramm
-### User case diagramm
+### Use case diagramm
 The use case diagramm is a high level methode to describe an idea of a System in a simple way that can be understood from all users.
 
 The Use case diagramm contains: 
